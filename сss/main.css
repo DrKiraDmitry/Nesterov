@@ -1,0 +1,248 @@
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+/**/
+h1,h2{
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.836);
+    color:rgba(255, 255, 255, 0.918);
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    border-left: 1px solid grey;
+    padding: 0 10px ;
+}
+.Calculator,.Instagram{
+    display: none;
+}
+/**/
+#Menu{
+    display:none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.836);
+    border-top: 1px solid black;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#Menu li{
+    margin: 0px 0;
+    font-size: 20px;
+    padding: 5px 0;
+    border-bottom: 1px solid gray;
+    color: beige;
+}
+#Menu a{
+    display: flex;
+    text-decoration: none;
+    color: beige;
+    padding: 20px;
+}
+.Services{
+    padding: 20px;
+}
+.Services label{
+    display: flex
+}
+#Menu2{
+    display: none;
+    flex-direction: column;
+    list-style: none;
+}
+/**/
+.FirstBlock{
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+}
+.FirstBlock span{
+    position: absolute;
+    margin:0;
+    color: rgba(255, 255, 255, 0.918);
+    padding: 20px;
+}
+.FirstBlock a{
+    color: rgba(255, 255, 255, 0.918);
+}
+.FirstBlock img{
+    display: inline-block;
+    position: relative;
+    filter: blur(1px);
+}
+/**/
+input{
+    display: none;
+}
+/**/
+.SecondBlock{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 15px; 
+}
+.SecondBlockDesktop div{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid gray;
+    padding: 0 10px;
+    margin: 30px 0;
+}
+.SecondBlock h2{
+    color: orange;
+    text-decoration: underline;
+}
+.SecondBlock span {
+    padding: 20px 0; 
+}
+/**/
+.SliderBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.SliderBlock h2{
+    color: orange;
+    text-decoration: underline;
+    margin: 15px 0; 
+}
+.strelka{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    font-size: 30px;
+    margin: 15px 0;
+}
+/**/
+footer{
+    background: rgba(0, 0, 0, 0.836);
+    color:rgba(255, 255, 255, 0.918);
+    padding: 10px 15px;
+    margin: 0;
+    border-top: 5px solid green;
+}
+footer i{
+    font-size: 50px;
+}
+/**/
+@media (min-width:500px){
+    header{
+        font-size: 30px;
+    }
+        /**/
+        .SliderBlock{
+            flex-direction: row;
+            padding: 50px;
+        }
+        .SliderBlockDesktop{
+            display: flex;
+            flex-direction: column;
+            margin: auto 50px;
+        }
+        .SliderBlock img{
+            max-width: 40%;
+        }
+        .strelka{
+            justify-content: flex-end;
+        }
+        .strelka i{
+            margin: 10px;
+        }
+}
+/**/
+@media (min-width:760px){
+    #Menu a{
+        font-size: 30px;
+    }
+    .Services label{
+        font-size: 30px;
+    }
+    .FirstBlock{
+        font-size: 15px;
+    }
+}
+@media (min-width:1024px){
+    .FirstBlock{
+        font-size: 18px;
+    }
+    header{
+        padding: 50px 40px ;
+    }
+    .logo, .number{
+        font-size: 35px;
+    }
+    nav{
+        display: none;
+    }
+    #Menu{
+        display: flex;
+        background: none;
+        width: 30%;
+        padding: 40px; 
+    }
+    #Menu li,#Menu a{
+        color:black;
+    }
+    .DesktopLayers{
+        display: flex;
+        flex-direction: row;
+    }
+    .CalculatorMobile{
+        display: none;
+    }
+    .Calculator, .Instagram{
+        display:block;
+        color: gray;
+        padding: 10px;
+    }
+    .Calculator a, .Instagram a{
+        color: green;
+        padding: 10px;
+    }
+    /**/
+    .SecondBlock{
+        padding: 50px;
+    }
+    .SecondBlockDesktop{
+        display: flex;
+        flex-direction: row;
+        padding: 50px 0;
+    }
+    /**/
+    .SliderBlock{
+        flex-direction: row;
+        padding: 50px;
+    }
+    .SliderBlockDesktop{
+        display: flex;
+        flex-direction: column;
+        margin: auto 50px;
+    }
+    .SliderBlock img{
+        max-width: 40%;
+    }
+    .strelka{
+        justify-content: flex-end;
+    }
+    .strelka i{
+        margin: 10px;
+    }
+    /**/
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px
+    }
+}
